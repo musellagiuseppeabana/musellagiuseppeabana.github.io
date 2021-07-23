@@ -1,4 +1,250 @@
 @charset "utf-8";
-.pokemon{background-color: aquamarine;}
-.pokemon a{font-size:50px;
+.header{box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);}
+#menu {
+  width: 100%;
+}
+
+/* (B) HORIZONTAL MENU ITEMS */
+#sidebar {  
+	
+	float: right;
+  margin: 0;
+  padding: 0;
+  width: 40%;
+  background-color:white;
+	position: fixed;
+ 
+  height: auto;
+   overflow-x:hidden;
+right: 0;
+align-content: center;
+text-align: center;
+}
+
+#listamenusidebar{font-size: 25px;
+	font-family: 'Fira Sans', sans-serif, thin;
+  display: block;
+  color: black;
+  padding: 20px;
+  text-decoration: none;
+}
+#nome{font-size: 40px;font-family: 'Fira Sans', sans-serif;
+  display: block;
+  color: black;
+  padding: 6px;
+  text-decoration: none;}
+#sidebar img {bottom:0;}
+#musellalogo{padding: 15px;}
+#sociallogo{padding: 5px;
+	cursor: pointer;
+	
+}
+#sociallogo:hover {  opacity: 0.5;  }
+#menuprincipalelogo{display: none;}
+
+#nomelogo{display: none;}
+#listamenusidebar:hover { color:teal; }
+#sidebar nome:hover { color:black; }
+
+/* (C) HIDE HAMBURGER */
+#menu label, #hamburger { display: none; }
+
+/* [ON SMALL SCREENS] */
+@media screen and (max-width: 850px){
+  /* (A) BREAK INTO VERTICAL MENU */
+#sidebar {box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 100%;
+	height: 100%;
+    align-content: center;
+	justify-content: center;
+	text-align: center;
+    position: relative;
+	z-index: 3;
+	overflow: hidden;
+  }	
+#sidebar a {
+    text-align: center;
+    float: none;
+  }
+
+  /* (B) SHOW HAMBURGER ICON */
+  #menu label {
+  display:inline-flex;
+    color: black;
+    font-style: normal;
+    font-size: 1.2em;
+    padding: 10px;
+	  float: right;
+	  font-size: 40px;
+	  position:relative;
+	  cursor: pointer;
+  }
+	.menuresponsivehomepage{
+	width: 50%;
+		position: relative;
+	display: inline-block;
+	justify-content: center;
+	text-align: center;
+	 align-content: center;
+	align-items: center;}
+	#menuprincipalelogo{ 
+		width: 35px;
+	padding-left:10px;
+		padding-right: 10px;
+	padding-top:20px;
+	display: inline-block;
+float: left;
+	justify-content: center;
+	text-align: center;
+	 align-content: center;}
+#nomelogo{float: left;
+	margin-top: 25px;
+	
+	padding-left: 10px;
+	font-family: Fira Sans;
+	font-size: 20px;
+	display:  inline-block;
+	}
+  /* (C) TOGGLE SHOW/HIDE MENU */
+  #sidebar { display: none; 
+	overflow: hidden;}
+  #menu input:checked ~ #sidebar { display: block; }
+}
+@media screen and (max-width: 500px){
+	.menuresponsivehomepage{width: 80%;}
+	}
+
+/* [DOES NOT MATTER] */
+html, body {
+  padding: 0;
+  margin: 0;
+  font-family: arial, sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
+.body{background color: black;}
+.slidershow{
+  width: 60%;
+  height: auto;
+  overflow: hidden;
+	position: static;
+	}
+.middle{
+  position: absolute;
+	background-color: black;
+   
+}
+
+.navigation{
+	position: absolute;
+	transform: translateX(-50%);
+	display: block;
+	width: auto;
+	position:fixed;
+	top:5%;
+
+	right: 39%;
+}
+.bar{
+  width: 30px;
+  height: 50px;
+  border: 7px solid #fff;
+	border-bottom: transparent;
+	border-top: transparent;
+	border-left: transparent;
+   margin: 6px;
+  cursor: pointer;
+  transition: 0.4s;
+	left: 0;
+	display: flex;
+	font-size: 15px;
+	color: #F2B05E; 
+}
+.bar:hover{
+  background-color:black;
+	border-right-color: black;
+	color: white;
+	
+}
+
+input[name="r"]{
+    position: absolute;
+    visibility: hidden;
+}
+
+.slides{
+	
+  width: 500%;
+  height: 100%;
+  display: flex;
+}
+
+.slide{
+  width: 20%;
+	height: auto;
+  transition: 0.6s;
+}
+.slide img{
+	margin-top: -20px;
+  width: 100%;
+	height: auto;
+
+}
+
+#r1:checked ~ .s1{
+  margin-left: 0;
+}
+#r2:checked ~ .s1{
+  margin-left: -20%;
+}
+#r3:checked ~ .s1{
+  margin-left: -40%;
+}
+#r4:checked ~ .s1{
+  margin-left: -60%;
+}
+#r5:checked ~ .s1{
+  margin-left: -80%;
+}
+
+@media screen and (max-width: 850px){
+	.slidershow{
+	width: 100%;
+	position: relative;
+	z-index: 2;}
+	
+ .navigation{
+	background-color:;
+	 position: absolute;
+  transform: translateX(-50%);
+ top:55%;
+	 right: -20px;
+	bottom:0;
+	 align-content: center;
+	 justify-content: center;
+}
+.bar{
+	width: 20px;
+  height: 40px;
+  border: 7px solid #fff;
+	border-bottom: transparent;
+	border-top:transparent;
+	border-left: transparent;
+	border-right-color:cornflowerblue;
+   margin: 6px;
+  cursor: pointer;
+  transition: 0.4s;
+	display: flex;
+	font-size: 15px;
+	color: aquamarine;
+	
+}	
 }
