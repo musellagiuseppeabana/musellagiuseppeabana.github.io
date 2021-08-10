@@ -331,6 +331,159 @@ height: 70px;
 /*-header fine*/
 
 
+/*-sezione about*/
+
+
+.aboutme{
+	top:50%;
+height: 950px;
+   width:600px;
+  z-index: 3;
+	display: block;
+	position: relative;
+  background-color: white;
+  overflow: hidden;
+  padding-top: 150px;
+align-content: center;
+justify-content: center;
+	text-align: center;
+	}
+
+#fotoprofilo{
+
+	
+    width: 250px;
+	border-radius: 50%;
+	border:5px solid #73AD21;
+	background-color: aliceblue;
+	
+	
+}
+.sidebartitolo{
+display: ;
+	padding-top:60px;
+	color: #35478C;
+	font-family: Fira sans;
+	font-size: 30px;
+	 margin-left: auto;
+  margin-right: auto;
+}
+
+.aboutme-discorso {
+	 margin-left: auto;
+  margin-right: auto;
+	text-align:justify;
+	display: ;
+	font-size: 15px;
+font-family: Fira sans;
+ vertical-align: center;
+  width: 360px;
+ color: #16193B;
+  margin-top:  50px;
+	margin-bottom:50px;
+	
+	
+}
+
+.aboutme-discorsoing {
+	text-align:justify;
+	width: 360px;
+   margin-top:  50px;
+	margin-bottom:50px;
+		font-size: 15px;
+font-family: Fira sans;
+  color: #1A4233;
+	top:70%;
+	display: ;
+	 margin-left: auto;
+  margin-right: auto;
+}
+.lineaseparazione{
+	
+	 margin-left: auto;
+  margin-right: auto;
+	background-color: black;
+	width: 350px;
+	height: 5px;
+	top: 69%;
+	padding:; 
+	}
+
+.studi{
+	
+	top:40%;
+height: 750px;
+ width: 600px;
+  z-index: 2;
+  
+	position: relative;
+  background-color:palevioletred;
+  overflow-x: hidden;
+  padding-top: 100px;
+	
+align-content: center;
+justify-content: center;
+	text-align: center;
+background: white;
+}
+
+.competenze{ position: relative;
+	
+	top:80%;
+height: 850px;
+  width:600px;
+  z-index: 2;
+  background-color:brown;
+  padding-top: 100px;
+	 background: white;
+align-content: center;
+justify-content: center;
+	text-align: center;}
+
+.competenze-img{
+	 
+}
+.competenze-img img{
+	 
+	padding-top: 50px;
+}
+
+.compeenzeloghi{padding-top: 90px;}
+.imgcontainer{overflow: ;
+	height:100%;
+	margin-top: 70px;
+	width:100%;
+	right: 0;
+
+	top: 0; 
+position:absolute;
+z-index:-1;}
+
+#immagine-sfondoabout{width: 100%;
+}
+
+#immagine-paralax{
+  position:sticky;
+  bottom: 0;
+  padding: 5px;
+  background-color: #cae8ca;
+  border: 2px solid #4CAF50;
+     z-index: 4;
+	width: 50%;
+	float :right;
+}
+
+@media only screen and (max-width: 700px){
+	.aboutme{width: 100%;
+		height:  100%;}
+	.studi{width: 100%;
+		
+	}
+	.competenze{width: 100%;}
+}
+
+
+/*-sezione about-fine*/
 
 
 
@@ -365,10 +518,7 @@ height: 70px;
 
 
 
-
-
-
-
+/*-sezione  galleria fine*/
 
 
 .sottomenu{position: relative;
@@ -534,7 +684,7 @@ background-color: transparent;
 }}
 
 
-
+/*-sezione  galleria fine*/
 
 
 /*-sezione footer*/
