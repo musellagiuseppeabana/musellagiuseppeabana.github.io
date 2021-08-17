@@ -795,7 +795,7 @@ background-color: transparent;
   clear: both;
 }
 
-@media only screen and (min-width: 770px){
+@media only screen and (max-width: 770px){
 	.selection{padding-left: 0;}
 	.selection-title{padding-left: 0;
 		width: 100%;}
