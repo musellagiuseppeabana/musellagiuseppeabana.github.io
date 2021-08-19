@@ -957,11 +957,13 @@ padding: 10px;
 #footerlogo{	width: 90px;
 padding-bottom: 10px;}
 
-.footermenu{ text-align: center;padding-bottom: 20px;cursor: pointer;}
+.footermenu{ text-align: center;padding-bottom: 20px;cursor: pointer;text-decoration: none;}
 
 .footermenu ul li{padding-top: 30px;display: inline;padding: 10px;background-color: ;
+	text-decoration: none;
 }
 .footermenu ul{list-style-type: none;
+	text-decoration: none;
 }
 .footermenu ul li:hover{list-style-type: none;
 	color: firebrick;
