@@ -4,6 +4,71 @@
   width: 100%;
 }
 
+/* responsive topnav */
+.topnav {
+  overflow: hidden;
+	display: none;
+	
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 15px 16px;
+  text-decoration: none;
+  font-size: 17px;
+	background-color: white;
+	text-decoration: none;
+	font-family: fira sans;
+	
+}
+
+.topnav a:hover {color: brown;
+ 
+}
+
+
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 700px) {
+	.topnav {
+z-index: 21;
+		display: block;}
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+	  
+  }
+}
+
+@media screen and (max-width: 700px) {
+ 	.topnav {
+
+		display: block;} .topnav.responsive {position: relative;
+	display: block;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+	}
+
+
+
+
+
+
 /* (B) HORIZONTAL MENU ITEMS */
 #sidebar {  
 	
@@ -51,6 +116,7 @@ text-align: center;
 
 /* [ON SMALL SCREENS] */
 @media screen and (max-width: 850px){
+	#iconamenuheader{display: none;}
   /* (A) BREAK INTO VERTICAL MENU */
 #sidebar {box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     width: 100%;
@@ -62,6 +128,7 @@ text-align: center;
 	z-index: 3;
 	overflow: hidden;
   }	
+	
 #sidebar a {
     text-align: center;
     float: none;
@@ -111,6 +178,7 @@ float: left;
   #menu input:checked ~ #sidebar { display: block; }
 }
 @media screen and (max-width: 500px){
+	#iconamenuheader{display: none;}
 	.menuresponsivehomepage{width: 80%;}
 	}
 
@@ -325,6 +393,7 @@ height: 70px;
 	z-index: 10;}
 	.desktopheader{height: 60px;
 	font-size: 40px;}
+	#iconamenuheader{display: none;}
 }
 
 
