@@ -828,7 +828,7 @@ display: inline-flex;
 padding: 10px;}
 
 
-.foto-border img{cursor: pointer;
+.foto-border a img{cursor: pointer;
 	
 	width: 60%;
 height: 100%;
