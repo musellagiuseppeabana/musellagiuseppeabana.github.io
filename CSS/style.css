@@ -403,7 +403,7 @@ height: 70px;
 /*-sezione about*/
 
 
-.aboutme{
+.aboutme{ border-right: solid 4px black;
 	top:50%;
 height: 950px;
    width:600px;
@@ -480,13 +480,13 @@ font-family: Fira sans;
 
 .studi{
 	
-	top:40%;
+	top:10%;
 height: 750px;
  width: 600px;
-  z-index: 2;
+  z-index: 1;
   
 	position: relative;
-  background-color:palevioletred;
+  border-right: solid 4px black;
   overflow-x: hidden;
   padding-top: 100px;
 	
@@ -497,7 +497,7 @@ background: white;
 }
 
 .competenze{ position: relative;
-	
+	border-right: solid 4px black;
 	top:80%;
 height: 850px;
   width:600px;
@@ -544,11 +544,12 @@ z-index:-1;}
 
 @media only screen and (max-width: 700px){
 	.aboutme{width: 100%;
-		height:  100%;}
+		height:  100%;border: none;}
 	.studi{width: 100%;
+		border: none;
 		
 	}
-	.competenze{width: 100%;}
+	.competenze{width: 100%;border: none;}
 }
 
 
@@ -687,14 +688,17 @@ filter: grayscale(0%);
 	
 position: absolute;
 left:50px;
-top:120px;}
-.immaginidecocontatti img{width: 400px;}
+top:120px;
+border: solid 3px black;
+}
+.immaginidecocontatti img{width: 410px;
+z-index: -100;}
 .immaginidecocontattidue{z-index: -1;
 
 position: absolute;
 right:50px;
-top:100px;}
-.immaginidecocontattidue img{width: 400px;}
+top:120px;border: solid 3px black;}
+.immaginidecocontattidue img{width: 410px;}
 
 
 
