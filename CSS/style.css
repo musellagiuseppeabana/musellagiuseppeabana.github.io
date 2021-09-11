@@ -244,7 +244,9 @@ html, body {
 	position:fixed;
 	top:5%;
 	right: 39%;
+	
 }
+.navigation b{text-shadow: 10px 0 6px 5px black;}
 .bar {
 	width: 30px;
 	height: 50px;
@@ -259,6 +261,7 @@ html, body {
 	display: flex;
 	font-size: 15px;
 	color: #F2B05E; 
+	box-shadow: 10px 0 6px -5px black;
 }
 .bar:hover {
 	background-color:black;
@@ -437,8 +440,14 @@ input[name="r"]{
 
 
 /*-sezione about*/
-
-
+.grigliabout{display:grid; 
+	grid-template-columns: 70%;
+	grid-gap: 10px;
+	
+}
+.informazioni{border: solid 10px red;
+	width: 600px;
+background: #00CBFF;}
 .aboutme{ 
 	border-right: solid 4px black;
 	top:50%;
@@ -448,7 +457,6 @@ input[name="r"]{
 	display: block;
 	position: relative;
 	background-color: white;
-	overflow: hidden;
 	padding-top: 150px;
 	align-content: center;
 	justify-content: center;
@@ -515,7 +523,7 @@ input[name="r"]{
 	z-index: 1;
 	position: relative;
 	border-right: solid 4px black;
-	overflow-x: hidden;
+	
 	padding-top: 100px;
 	align-content: center;
 	justify-content: center;
@@ -545,29 +553,22 @@ input[name="r"]{
 }
 .imgcontainer{
 	overflow: ;
-	height:100%;
+	height:900px;
 	margin-top: 70px;
 	width:100%;
 	right: 0;
 	top: 0; 
-	position:absolute;
+	position: absolute;
 	z-index:-1;
+	background: #A9C076;
+	border: solid 5px black;
 }
 
 #immagine-sfondoabout{
 	width: 100%;
 }
 
-#immagine-paralax{
-	position:sticky;
-	bottom: 0;
-	padding: 5px;
-	background-color: #cae8ca;
-	border: 2px solid #4CAF50;
-	z-index: 4;
-	width: 50%;
-	float :right;
-}
+
 
 @media only screen and (max-width: 700px){
 	.aboutme{width: 100%;
@@ -585,15 +586,21 @@ input[name="r"]{
 /*-sezione contatti*/
 .contact{
 	font-family: Fira sans,sans serif;
-	height: 500px;
-	width: 50%;justify-content: center;
+	justify-content: center;
 	align-content: center;
 	text-align-last: center;
-	margin-top: 10%;
+	margin-top: 135px;
 	background-color: white;
 	margin-left: auto;
 	margin-right: auto;
- }
+	}
+
+.grigliacontatti{	
+	display: grid;
+	grid-template-columns: 22% 56% 22% ;
+	
+}
+
 .title{
 	padding: 20px;
 font-size: 25px;
@@ -607,6 +614,7 @@ font-weight: 700;
 }
 .contact-container{;margin-left: auto;
 	margin-right: auto;
+	
     }
 .contact-container img{ padding: 10px;width: 100px; filter: grayscale(100%);cursor: pointer;
 }
@@ -713,27 +721,23 @@ filter: grayscale(0%);
 	padding: 10px;
 }
 
-.immaginidecocontatti{z-index: -1;
-	
-position: absolute;
-left:50px;
-top:120px;
-border: solid 3px black;
-}
-.immaginidecocontatti img{width: 410px;
-z-index: -100;}
-.immaginidecocontattidue{z-index: -1;
+.immaginidecocontatti{
 
-position: absolute;
-right:50px;
-top:120px;border: solid 3px black;}
-.immaginidecocontattidue img{width: 410px;}
+
+}
+.immaginidecocontatti img{width: 100%;border: solid 3px black;
+}
+.immaginidecocontattidue{
+
+	}
+.immaginidecocontattidue img{width: 100%;border: solid 3px black;}
 
 
 
 @media only screen and (max-width: 700px){
 	.contact{
-		width: 100%}
+		width: 100%;}
+	.grigliacontatti{display: inline;}
 	
 	.contact-container{display: inline;
 	margin-left: 50px;}
@@ -785,11 +789,11 @@ top:120px;border: solid 3px black;}
 	align-content: center;
 	height: auto;
 	padding-top: 120px;
-margin: auto;
+	margin: auto;
 	width: 100%;
 	vertical-align: middle;
 	text-align: center;
-background: ;
+	background: ;
 	
 
 	
@@ -846,11 +850,11 @@ background: ;
 #listagalleria ul li:hover{
 	text-decoration: none;
 	color: brown;
-	border: 2px solid black;
+	
 	}
 .griglia{
-	width: 60%;
-	background-image: url("file:///C:/Users/musel/Documents/GitHub/musellagiuseppeabana.github.io/immagini/gaLLERY%202.png");
+	width: 50%;
+	background-color: aquamarine;
 	align-content: center;
 	margin-left: auto;
 	margin-right: auto;
@@ -858,7 +862,7 @@ background: ;
 	grid-template-columns: 33% 33% 33% ;
 	
 	}
-.foto-border{background-color: aqua;
+.foto-border{
 
 margin: 10px;}
 
@@ -869,27 +873,17 @@ margin: 10px;}
 	cursor: pointer;
 	width: 100%;
 	height: 100%;
-	
-	
+	border: solid 5px #ED974C;
+	border-radius:  25px;
 	
 }
-.foto-border img:hover{ opacity: 20%;
+.foto-border img:hover{border: solid 5px red;
+	 filter: grayscale(50%);
+	border-radius:  25px;
 	}
 
 
 
-.overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: .5s ease;
-  background-color: #008CBA;
-}
 
 .selection{position: relative;
 }
@@ -903,28 +897,25 @@ margin: 10px;}
 }
 
 @media only screen and (max-width: 800px){
-	.selection{padding-left: 0;
+	.selection{
 	padding-top: 90px;}
 	.selection-title{padding-left: 0;
 		width: 100%;}
 	.griglia{
 	width: 80%;
-	display: grid;
-	grid-template-columns: 33% 33% 33% ;
 	
 	}
 	
 	.foto-border 
-	{padding-left: 10px;
-		width: 100%;
-		position: relative;
-		display: inline-flex;
-		 }
-	.foto-border img{
+	{
+		width: 95%;
+		border: 
 		
+		 }
+	.foto-border img{padding: 5px;
 		width: 100%;
-	height: auto;
-	padding: 10;}
+		height: auto;
+	}
 	
 	
 	
@@ -938,15 +929,15 @@ margin: 10px;}
 	}
 	#listagalleria ul li{display:inline-block;padding: 10px;}
 .sottomenu{
-
-	height: 100px;}}
+	height: 100px;}
+}
 @media only screen and (max-width: 500px){
 	.selection-title{width: 100%; margin-right:20px; }
 	.foto-border {width: 100%;
-		position: relative;
-		display: block; }
+		
+		 }
 	.griglia{width: 100%;
-	grid-template-columns: 100% 100% 100%;}
+	grid-template-columns: 95% ;}
 	.foto-border img{
 		width: 100%;
 	height: auto;
