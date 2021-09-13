@@ -47,12 +47,6 @@
 		float: right;
 		display: block;
 	}
-}
-
-@media screen and (max-width: 700px) {
- 	.topnav {
-		display: block;
-	} 
 	.topnav.responsive {
 		position: relative;
 	    display: block;
@@ -68,6 +62,10 @@
     text-align: left;
   }
 	}
+	
+
+@media screen and (max-width: 700px) {
+	
 
 
 /* (B) HORIZONTAL MENU ITEMS */
