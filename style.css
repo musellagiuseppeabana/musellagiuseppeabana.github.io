@@ -40,7 +40,7 @@
 	.topnav {
 		z-index: 21; 
 		display: block;
-		top: -20px;
+		top: -40px;
 	}
 	.topnav a:not(:first-child) {
 		display: none;
@@ -412,7 +412,7 @@ input[name="r"]{
 	background-color: white;
 	height: 70px;
 	position:absolute;
-	top:90px;
+	top:70px;
 	align-content: center;
 	text-align: center;
 	margin-top: auto;
