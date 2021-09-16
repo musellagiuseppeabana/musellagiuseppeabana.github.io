@@ -23,6 +23,7 @@
     background-color: white;
 	text-decoration: none;
 	font-family: fira sans;
+	
 }
 
 .topnav a:hover {
@@ -39,6 +40,7 @@
 	.topnav {
 		z-index: 21; 
 		display: block;
+		top: -20px;
 	}
 	.topnav a:not(:first-child) {
 		display: none;
@@ -210,7 +212,7 @@
 	}
 }
 
-/* [DOES NOT MATTER] */
+/* [menu home  */
 html, body {
   padding: 0;
   margin: 0;
@@ -349,7 +351,7 @@ input[name="r"]{
 	z-index: 10;
 	width: 100%;
 	top:0;
-	height: 70px;	
+	height: 70px;
 }
 
 .logoelabel{
@@ -410,7 +412,7 @@ input[name="r"]{
 	background-color: white;
 	height: 70px;
 	position:absolute;
-	top:60px;
+	top:90px;
 	align-content: center;
 	text-align: center;
 	margin-top: auto;
@@ -425,7 +427,7 @@ input[name="r"]{
 		z-index: 10;
 	}
 	.desktopheader{
-		height: 60px;
+		height: 70px;
 		font-size: 40px;
 	}
 	#iconamenuheader{
@@ -875,13 +877,15 @@ margin: 10px;
 	cursor: pointer;
 	width: 100%;
 	height: 100%;
-	border: solid 5px #ED974C;
-	border-radius:  25px;
+	border: solid 5px ;
+	border-color: transparent transparent transparent transparent;
+	
 	}
 .foto-border img:hover{
-	border: solid 5px red;
+	border-bottom: solid 5px ;
+	border-color:  blue ;
 	filter: grayscale(50%);
-	border-radius:  25px;
+	
 	}
 .selection{
 	position: relative;
