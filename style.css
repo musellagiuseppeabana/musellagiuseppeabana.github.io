@@ -65,8 +65,8 @@
   }
 	}
 	
-
-/* (B) HORIZONTAL MENU ITEMS */
+/* responsive topnav sezione about gallery e contact fine*/
+/* menu home principale */
 #sidebar {
 	float: right;
 	margin: 0;
@@ -105,7 +105,7 @@
 #sociallogo {
 	padding: 5px;
 	cursor: pointer;
-	}
+}
 #sociallogo:hover{ 
 	opacity: 0.5;
 }
@@ -117,7 +117,7 @@
 	display: none;
 }
 #listamenusidebar:hover { 
-	color:teal; 
+	color:#F2785C; 
 }
 #sidebar nome:hover { 
 	color:black; 
@@ -135,7 +135,6 @@
 	}
   /* (A) BREAK INTO VERTICAL MENU */
 #sidebar {
-	
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     width: 100%;
 	height: 100%;
@@ -212,7 +211,7 @@
 	}
 }
 
-/* [menu home  */
+/* slide show  */
 html, body {
   padding: 0;
   margin: 0;
@@ -339,7 +338,7 @@ input[name="r"]{
 		color: coral;
 	}
 }
- /*[header] */
+ /*[header about contact gallery] */
 
 * {
 	box-sizing: border-box;
@@ -362,12 +361,12 @@ input[name="r"]{
 
 #iconamenuheader{
 	text-decoration: none;
-	color: black;
+	color: #F2785C;
 	display: block;
 	margin-right: 10px;
 	margin-top: -2px;
 	float: right;
-	font-size: 45px;
+	font-size: 40px;
 	bottom: 5px;
 	cursor: pointer;
 }
@@ -418,7 +417,6 @@ input[name="r"]{
 	margin-top: auto;
 	margin-left: auto;
 }
-
 .logomenuheader a{
 	margin-top:10px;
 }
@@ -474,13 +472,12 @@ input[name="r"]{
 .sidebartitolo {
 	display: ;
 	padding-top:60px;
-	color: #35478C;
+	color: #9CBF78;
 	font-family: Fira sans;
 	font-size: 30px;
 	margin-left: auto;
 	margin-right: auto;
-	
-}
+	}
 
 .aboutme-discorso {
 	margin-left: auto;
@@ -823,7 +820,7 @@ input[name="r"]{
 }
 
 #listagalleria {
-	border-bottom: solid 2px coral;
+	border-bottom: solid 2px #F2785C;
 	text-align: center;
 	margin-top: 130px;
 	background: white;
@@ -844,6 +841,9 @@ input[name="r"]{
 }
 	
 #listagalleria ul li {
+	color:white;
+	border-radius: 15px;
+	background-color: black;
 	text-decoration: none;
 	cursor: pointer;
 	padding: 10px;
@@ -854,8 +854,9 @@ input[name="r"]{
 	list-style-type: none;
 }
 #listagalleria ul li:hover{
+	background-color: transparent;
 	text-decoration: none;
-	color: brown;
+	color: #F2785C;
 	
 	}
 .griglia{
@@ -882,9 +883,9 @@ margin: 10px;
 	
 	}
 .foto-border img:hover{
-	border-bottom: solid 5px ;
-	border-color:  blue ;
-	filter: grayscale(50%);
+	border: solid 5px ;
+	border-color:  #9CBF78 ;
+	filter: grayscale(100%);
 	
 	}
 .selection{
