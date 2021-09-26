@@ -228,7 +228,7 @@ html, body {
 	}
 .middle {
 	position: absolute;
-	background-color: whitesmoke;
+	background-color: white;
    
 }
 
@@ -592,7 +592,7 @@ input[name="r"]{
 	justify-content: center;
 	align-content: center;
 	text-align-last: center;
-	margin-top: 135px;
+	margin-top: 140px;
 	background-color: white;
 	margin-left: auto;
 	margin-right: auto;
@@ -731,13 +731,11 @@ input[name="r"]{
 
 .immaginidecocontatti img{
 	width: 100%;
-	border: solid 3px black;
 }
 .immaginidecocontattidue{
 	}
 .immaginidecocontattidue img{
 	width: 100%;
-	border: solid 3px black;
 }
 
 
